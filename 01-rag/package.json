@@ -1,0 +1,24 @@
+{
+  "name": "site-rag-node",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "scrape": "node src/scrape.js",
+    "ingest": "node src/ingest.js",
+    "query": "node src/query.js",
+    "server": "node src/server.js"
+  },
+  "dependencies": {
+    "@chroma-core/default-embed": "^0.1.9",
+    "@fastify/static": "^8.0.4",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "chromadb": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1"
+  }
+}

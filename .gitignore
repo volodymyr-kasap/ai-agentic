@@ -1,0 +1,26 @@
+# --- secrets -------------------------------------------------------------
+# Never commit a real key. Every project ships a .env.example instead.
+.env
+.env.*
+!.env.example
+
+# --- dependencies & build output ----------------------------------------
+node_modules/
+dist/
+build/
+
+# --- local vector store (01-rag) ----------------------------------------
+chroma_data/
+
+# --- logs & OS cruft -----------------------------------------------------
+*.log
+npm-debug.log*
+.DS_Store
+
+# --- editor --------------------------------------------------------------
+.idea/workspace.xml
+.idea/shelf/
+.idea/httpRequests/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.vscode/

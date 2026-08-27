@@ -1,0 +1,18 @@
+{
+  "name": "mcp-weather-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal Model Context Protocol server over stdio: two tools, no state, no network.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "inspect": "npx -y @modelcontextprotocol/inspector node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  }
+}
